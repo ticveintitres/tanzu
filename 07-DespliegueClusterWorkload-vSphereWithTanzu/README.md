@@ -6,9 +6,9 @@ Los siguientes ficheros os ayudarán a desplegar un cluster, desde algo básico 
 
 En un terminal, conectese al cluster de Tanzu. Revise los contextos y conectese al contexto deseado.
 
-...
+'''
 kubectl config use-context tkgs-ns
-...
+'''
 
 Enumere los enlaces de clase de máquina virtual que están disponibles en el espacio de nombres de vSphere de destino.
 
