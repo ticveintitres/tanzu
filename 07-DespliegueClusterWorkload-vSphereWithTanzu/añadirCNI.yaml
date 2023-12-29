@@ -1,0 +1,14 @@
+## Añadir a nivel de Spec lo siguiente
+
+spec:
+ settings:
+    network:
+      cni:
+        name: antrea # elegir entre antrea o calico
+      pods:
+        cidrBlocks: # Configurar el CIDR para los pods
+        - 192.168.0.0/16
+      serviceDomain: ticveintitres.local # Añadir dominio de resolución
+      services: # Configurar el CIDR para los servicios internos
+        cidrBlocks:
+        - 10.96.0.0/12
