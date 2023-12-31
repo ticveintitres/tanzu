@@ -1,8 +1,0 @@
-# Añadir a nivel de spec
-
-spec:
-  topology:
-    variables:
-    - name: ntpServers
-      value:
-      - "150.214.94.5"
