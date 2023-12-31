@@ -20,10 +20,6 @@ spec:
       tkr:
         reference:
           name: v1.24.11---vmware.1-fips.1-tkg.1.ubuntu
-    variables:
-    - name: ntpServers
-      value:
-      - "150.214.94.5"
  settings:
     network:
       cni:
