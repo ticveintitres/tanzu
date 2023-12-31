@@ -24,7 +24,7 @@ spec:
     - name: ntpServers
       value:
       - "150.214.94.5"
-   settings:
+  settings:
     network:
       cni:
         name: antrea
