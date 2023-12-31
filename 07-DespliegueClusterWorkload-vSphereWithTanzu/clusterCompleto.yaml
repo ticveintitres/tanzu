@@ -1,25 +1,25 @@
 apiVersion: run.tanzu.vmware.com/v1alpha2
 kind: TanzuKubernetesCluster
 metadata:
-  name: cluster # Nombre del cluster
-  namespace: cluster01 # Espacio de Nombres donde instalar el Cluster
+  name: cluster
+  namespace: cluster01
 spec:
   topology:
-    controlPlane: # Maquinas virtuales para la gestión del cluster
-      replicas: 1 # Numero de replicas, mínimo 1, y luego 3, 5...etc
-      vmClass: guaranteed-small # Tipo de Clase de máquina virtual , revisar el objeto Espacio de Nombres en vCenter
-      storageClass: tanzu # Storage class definida en vCenter 
+    controlPlane:
+      replicas: 1
+      vmClass: guaranteed-small
+      storageClass: tanzu 
       tkr:
         reference:
-          name: v1.24.11---vmware.1-fips.1-tkg.1.ubuntu # nombre de la plantilla de máquina virtual. Ejecutar "kubectl get tkr" para ver los tipos de plantilla 
+          name: v1.24.11---vmware.1-fips.1-tkg.1.ubuntu
     nodePools:
-    - name: worker # Maquinas virtuales para desplegar las aplicaciones
-      replicas: 1 # Numero de replicas, mínimo 1
-      vmClass: guaranteed-small # Tipo de Clase de máquina virtual , revisar el objeto Espacio de Nombres en vCenter
-      storageClass: tanzu # Storage class definida en vCenter
+    - name: worker
+      replicas: 1
+      vmClass: guaranteed-small
+      storageClass: tanzu
       tkr:
         reference:
-          name: v1.24.11---vmware.1-fips.1-tkg.1.ubuntu # nombre de la plantilla de máquina virtual. Ejecutar "kubectl get tkr" para ver los tipos de plantilla
+          name: v1.24.11---vmware.1-fips.1-tkg.1.ubuntu
     variables:
     - name: ntpServers
       value:
@@ -27,11 +27,11 @@ spec:
  settings:
     network:
       cni:
-        name: antrea # elegir entre antrea o calico
+        name: antrea
       pods:
-        cidrBlocks: # Configurar el CIDR para los pods
+        cidrBlocks:
         - 192.168.0.0/16
-      serviceDomain: ticveintitres.local # Añadir dominio de resolución
-      services: # Configurar el CIDR para los servicios internos
+      serviceDomain: ticveintitres.local
+      services:
         cidrBlocks:
         - 10.96.0.0/12
