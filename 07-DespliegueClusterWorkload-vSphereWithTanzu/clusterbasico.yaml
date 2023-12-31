@@ -11,7 +11,7 @@ spec:
       storageClass: tanzu # Storage class definida en vCenter 
       tkr:
         reference:
-          name: v1.24.11---vmware.1-fips.1-tkg.1.ubuntu # nombre de la plantilla de máquina virtual. Ejecutar "kubectl get tkr" para ver los tipos de plantilla 
+          name: v1.23.8---vmware.3-tkg.1 # nombre de la plantilla de máquina virtual. Ejecutar "kubectl get tkr" para ver los tipos de plantilla 
     nodePools:
     - name: worker # Maquinas virtuales para desplegar las aplicaciones
       replicas: 1 # Numero de replicas, mínimo 1
@@ -19,7 +19,7 @@ spec:
       storageClass: tanzu # Storage class definida en vCenter
       tkr:
         reference:
-          name: v1.24.11---vmware.1-fips.1-tkg.1.ubuntu # nombre de la plantilla de máquina virtual. Ejecutar "kubectl get tkr" para ver los tipos de plantilla
+          name: v1.23.8---vmware.3-tkg.1 # nombre de la plantilla de máquina virtual. Ejecutar "kubectl get tkr" para ver los tipos de plantilla
   settings:
     network:
       cni:
