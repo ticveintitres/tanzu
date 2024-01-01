@@ -1,6 +1,6 @@
-# 07-DespligueClusterWorkload-vSphereWithTanzu
-En el siguiente video explico como desplegar un cluster de Workload en vSphere with Tanzu:
-
+# 07-AprovisionarClusterTKGS
+En el siguiente video explico como desplegar un cluster de TKGS en vSphere with Tanzu:
+https://youtu.be/wxg3S5wKdRs
 
 En un terminal, conectese al cluster de Tanzu. Revise los contextos y conectese al contexto deseado.
 

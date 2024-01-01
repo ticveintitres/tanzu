@@ -1,0 +1,37 @@
+apiVersion: run.tanzu.vmware.com/v1alpha2
+kind: TanzuKubernetesCluster
+metadata:
+#Contenido de metadata, bla bla bla
+spec:
+  distribution:
+    fullVersion: v1.23.8+vmware.3-tkg.1 # Cambiar si la version de apiVersion es v1alpha1
+    version: ""
+  settings:
+    network:
+      cni:
+        name: antrea
+      pods:
+        cidrBlocks:
+        - 192.168.0.0/16
+      serviceDomain: ticveintitres.local
+      services:
+        cidrBlocks:
+        - 10.96.0.0/12
+  topology:
+    controlPlane:
+      replicas: 1
+      storageClass: tanzu
+      tkr:
+        reference:
+          name: v1.23.8---vmware.3-tkg.1 # Cambiar si la version de apiVersion es v1alpha2
+      vmClass: guaranteed-small
+    nodePools:
+    - name: worker
+      replicas: 1
+      storageClass: tanzu
+      tkr:
+        reference:
+          name: v1.23.8---vmware.3-tkg.1 # Cambiar si la version de apiVersion es v1alpha2
+      vmClass: guaranteed-small
+status:
+# Contenido de Status , bla bla bla
