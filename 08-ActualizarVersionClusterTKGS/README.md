@@ -23,6 +23,7 @@ kubectl edit tanzukubernetescluster/CLUSTER-NAME
 Dependiendo de la versión:
 
 En Alpha1 , cambiar el nombre en el campo "distribution"
+
 En Alpha2 , cambiar el nombre en el campo "tkr"
 
 Guardar los cambios y esperar a que se desplieguen las nuevas máquinas virtuales y las viejas se borren.
