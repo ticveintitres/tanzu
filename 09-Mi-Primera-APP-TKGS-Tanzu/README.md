@@ -28,11 +28,11 @@ kubectl expose pods test --type=LoadBalancer --port=80
 
 Revisando el Balanceador de carga de AVI NSX se ha levantado un servicio con una IP:
 
-![Alt text](image.png)
+![imagen](https://github.com/ticveintitres/tanzu/assets/153328087/b337cedf-3ac8-483b-9566-12afac62de37)
 
 Navegando a la URL se puede ver que Apache esta levantado
 
-![Alt text](image-1.png)
+![imagen](https://github.com/ticveintitres/tanzu/assets/153328087/447a55bd-3988-43ca-9b66-21e8067aefd5)
 
 https://www.youtube.com/@ticveintitres
 
