@@ -1,6 +1,6 @@
 velero install \
 --provider aws \
---plugins velero/velero-plugin-for-aws:v1.0.0 \
+--plugins velero/velero-plugin-for-aws:latest \
 --bucket velero \
 --secret-file secret \
 --use-volume-snapshots=false \
