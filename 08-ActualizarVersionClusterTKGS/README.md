@@ -1,5 +1,5 @@
 # 08-ActualizarVersionClusterTKGS
-En el siguiente video explico como actualizar un cluster de TKGS en vSphere with Tanzu:
+En el siguiente video explico como actualizar un cluster de TKGS en vSphere with Tanzu: https://youtu.be/I7S1PyGVi7o?feature=shared
 
 
 En un terminal, conectarse al contexto del Espacio de nombres donde esté alojado el cluster
