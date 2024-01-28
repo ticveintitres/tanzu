@@ -1,0 +1,9 @@
+velero install \
+--provider aws \
+--plugins velero/velero-plugin-for-aws:v1.0.0 \
+--bucket velero \
+--secret-file secret \
+--use-volume-snapshots=false \
+--use-restic \
+--backup-location-config region=ticveintitres-local,s3ForcePathStyle="true",s3Url=https://alminio01.ticveintitres.local:9000 \
+--cacert alminio01-ticveintitres-local.pem
