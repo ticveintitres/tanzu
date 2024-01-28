@@ -1,5 +1,5 @@
 # 09-Mi Primera APP en TKGS Tanzu
-En el siguiente video explico como desplegar una apliación sencilla en TKGS en vSphere with Tanzu:
+En el siguiente video explico como desplegar una apliación sencilla en TKGS en vSphere with Tanzu: https://youtu.be/PIC_AecmVsI?feature=shared
 
 
 En un terminal, conectarse al contexto del Espacio de nombres donde esté alojado el cluster
