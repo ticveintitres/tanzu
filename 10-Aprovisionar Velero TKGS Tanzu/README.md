@@ -6,12 +6,14 @@ Este manual esta preparado para la versión 1.24.11 de Kubernetes que corre sobr
 Descargar los binarios desde el portal de VMWARE https://customerconnect.vmware.com. Hay que hacer login para descargar paquetes.
 
 Filtrar por "Tanzu Kubernetes Grid Download".
-
----aquí imagen---
+![imagen](https://github.com/ticveintitres/tanzu/assets/153328087/9ce33729-cec9-4847-adf8-2834d2710617)
+![imagen](https://github.com/ticveintitres/tanzu/assets/153328087/b2eb13e3-4ad9-4152-8ff2-7724a4e85b2f)
+![imagen](https://github.com/ticveintitres/tanzu/assets/153328087/21508c85-d9cf-452d-891d-b056a8adb9cb)
+![imagen](https://github.com/ticveintitres/tanzu/assets/153328087/3de9c2bc-52d7-4c12-a8ab-c5ef3f3115e5)
 
 Dirigirse a minIO. Crear un bucket y un Access Key
-
----aquí imagen---
+![imagen](https://github.com/ticveintitres/tanzu/assets/153328087/bd933b26-64b6-474a-960c-37d5ead3aea0)
+![imagen](https://github.com/ticveintitres/tanzu/assets/153328087/8dfb4ae1-c029-406a-9355-2c6d55d109e3)
 
 Subimos el fichero en la maquina de bootstrap, en mi caso Linux Debian 12
 Descomprimir el fichero, cambiar los permisos a ejecución, mover a la carpeta de binarios y activar el Bash completion
