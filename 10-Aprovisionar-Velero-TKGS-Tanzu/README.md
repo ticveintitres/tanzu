@@ -1,5 +1,5 @@
 # 10-Aprovisionar Velero TKGS Tanzu
-En el siguiente video explico como desplegar la solución de Velero en TKGS en vSphere with Tanzu como solución de Backup para Kubernetes:
+En el siguiente video explico como desplegar la solución de Velero en TKGS en vSphere with Tanzu como solución de Backup para Kubernetes: https://youtu.be/H-aDyVJtqKw
 
 
 Este manual esta preparado para la versión 1.24.11 de Kubernetes que corre sobre ESXi versión 7, y la versión de Velero es la 1.9.7.
