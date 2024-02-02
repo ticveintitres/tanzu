@@ -1,5 +1,5 @@
 # 11-Backup&Restore Velero TKGS Tanzu
-En el siguiente video explico como backup y restores con Velero en TKGS en vSphere with Tanzu como solución de Backup para Kubernetes: 
+En el siguiente video explico como backup y restores con Velero en TKGS en vSphere with Tanzu como solución de Backup para Kubernetes: https://youtu.be/HKiXIF-pixM
 
 
 Este manual esta preparado para la versión 1.24.11 de Kubernetes que corre sobre ESXi versión 7, y la versión de Velero es la 1.9.7.
@@ -25,8 +25,6 @@ kubectl get service -n wordpress
 ```
 
 Acceder via web, configurar Wordpress y escribir una entrada a modo de prueba.
-
----aqui imagen---
 
 Realizar el backup de Wordpress con Velero. Para ello la forma más básica es lanzando un backup a demanda
 
@@ -62,8 +60,6 @@ kubectl get pv
 ```
 
 Por último ingresar via web al Wordpress y comprobar que todo se ha recuperado.
-
---aqui imagen---
 
 Si todo salio correctamente, se ha recuperado la aplicación de Wordpress desde una copia de seguridad con Velero
 
