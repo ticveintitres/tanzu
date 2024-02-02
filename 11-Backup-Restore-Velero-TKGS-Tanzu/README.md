@@ -6,8 +6,6 @@ Este manual esta preparado para la versión 1.24.11 de Kubernetes que corre sobr
 
 Para esta prueba he dejado un fichero llamado prueba.yaml, que instala un Wordpress en el cluster, que tiene dos persistent volumes, uno para Wordpress y otro para MySQL.
 
-```
-
 Conectarse al contexto del Espacio de nombres donde esté alojado el cluster
 
 ```
